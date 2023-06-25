@@ -39,12 +39,12 @@ body {
 .navbar-menu a {
     font-family: 'Raleway' ,sans-serif;
     color: #fff;
-    transition: 0.4s;
     padding: 12px 15px;
     border-radius: 2px;
     align-items: center;
     justify-content: space-between;
     text-transform: uppercase;
+    transition: 0.4s;
 }
 .navbar-menu a:hover {
     background-color: #494949;
@@ -115,4 +115,10 @@ body {
 
 .box:hover h3 {
     display: none;
+}
+
+@media only screen and (max-width: 480px) {
+    .navbar-menu a {
+        font-size: 12px;
+    }
 }

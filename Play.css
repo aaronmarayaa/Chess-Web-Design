@@ -103,3 +103,9 @@ body {
     padding: 4rem;
     color: #ffffff;
 }
+
+@media only screen and (max-width: 480px) {
+  .navbar-menu a {
+      font-size: 12px;
+  }
+}
