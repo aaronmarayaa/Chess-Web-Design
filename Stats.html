@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" href="images/icons/statsIcon.png">
+
+  <link rel="stylesheet" href="Stats.css">
+
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+  <title>Chess</title>
+</head>
+<body>
+  <div class="semi-circle"></div>
+  
+  <div class="stats">
+    <nav class="navbar-menu">
+      <a href="Main.html"><img src="images/wKnight.png"> home</a>
+      <a href="Learn.html"><img src="images/wBook.png"> learn</a>
+      <a href="Play.html"><img src="images/clock.png"> play</a>
+    </nav>
+  
+    <h1>Stats</h1>
+
+    <div class="chart">
+      <canvas id="myChart" ></canvas>
+    </div>
+    
+    <h2>404 Games</h2>
+    
+    <div class="scale">
+      <div class="description">
+        <div class="label win">68% Win</div>
+        <div class="label draw">2% Draw</div>
+        <div class="label lose">30% Lose</div>
+      </div>
+
+      <div class="bar">
+        <div class="progress loseBar" style="width: 100%;"></div>
+        <div class="progress drawBar" style="width: 70%;"></div>
+        <div class="progress winBar" style="width: 68%;"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="Stats.js"></script>
+  
+</body>
+</html>

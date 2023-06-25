@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+
+    <link rel="icon" type="image/png" href="images/icons/icon.png">
+
+    <link rel="stylesheet" href="Main.css">
+
+    <title>Chess</title>
+</head>
+<body>
+
+    <!-- LOG OUT CONFIRMATION -->
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+          <h3>Do you really want to log out?</h3>
+          <div class="modal-buttons">
+            <button id="confirm-logout">Yes</button>
+            <button id="cancel-logout">No</button>
+          </div>
+        </div>
+    </div>
+    
+    <!-- HOME -->
+    <section class="home" id="home">
+        <nav class="navbar-menu">
+            <label for="menu-toggle" class="menu-icon" onclick="toggleMenu()">&#9776;</label>
+            <ul class="menu" id="menu">
+                <li><a href="#home"><img src="images/home.png"> home</a></li>
+                <li><a href="#about"><img src="images/about.png"> about</a></li>
+                <li><a href="Learn.html"><img src="images/book.png"> learn</a></li>
+                <li><a href="Play.html"><img src="images/play.png"> play</a></li>
+                <li><a href="Stats.html"><img src="images/graph.png"> Stats</a></li>
+                <li><a href="LogInForm.html" class="log-out" id="log-out">log out</a></li>
+            </ul>
+        </nav>
+        <div class="stage">
+            <div class="content">
+                <h3>" Chess is a Game of Brain, not Heart. "</h3>
+                <p>
+                    Chess is more than just a game; it's an art form that challenges your intellect, hones your strategic thinking, 
+                    and teaches valuable life lessons along the way. Our comprehensive course is designed to help 
+                    you unlock your full potential and unleash the grandmaster within you.
+                </p>
+                <a href="Learn.html" class="btn">Start Learning</a>
+            </div>
+
+            <div class="image">
+                <img src="images/bgNew-removebg-preview.png" alt="image">
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <h1>Welcome to our Free Chess Website Course!</h1>
+            <br>
+            <p>Are you eager to master the ancient game of chess or looking to enhance your strategic skills? Look no further! Our Free Chess Website Course is designed to cater to chess enthusiasts of all levels, 
+                from beginners to advanced players. Whether you're a novice or an experienced tactician, this course will provide you with a comprehensive and enjoyable learning experience.
+            </p>
+            <br>
+            <p>
+                Our course offers a user-friendly and interactive online platform where you can learn and improve your chess skills at your own pace. We believe that 
+                chess is not only a game but also an art form, and our dedicated team of chess experts is committed to helping you unlock your full potential.</p>
+            </p>
+            <br>
+
+            <dl>
+                <dt><img src="images/pawn.png"> Comprehensive Lessons:</dt>
+                <dd>- Our course curriculum covers everything from the basics of chess, including the rules and fundamental strategies, to advanced tactics and positional play.
+                    Each lesson is carefully crafted to ensure a smooth learning experience, with clear explanations, illustrative examples, and interactive exercises.
+                </dd>
+
+                <dt><img src="images/pawn.png"> Engaging Practice Exercises:</dt>
+                <dd>- Practice makes perfect! Our course provides a wide range of practice exercises that allow you to reinforce your understanding of different chess concepts. 
+                    Whether it's solving puzzles, analyzing famous chess games, or playing against virtual opponents, our exercises will challenge and sharpen your skills.
+                </dd>
+
+                <dt><img src="images/pawn.png"> Personalized Progress Tracking:</dt>
+                <dd>
+                    We understand the importance of monitoring your progress. Our platform offers personalized progress tracking, allowing you to see how far you've come and 
+                    identify areas where you need further improvement. You can track your performance, review completed lessons, and set goals to keep yourself motivated throughout the course.
+                </dd>
+
+                <dt><img src="images/pawn.png"> Accessible Anytime, Anywhere:</dt>
+                <dd>
+                    Our course is fully accessible online, which means you can learn and practice chess whenever and wherever you want. Whether you prefer studying from the comfort of your home or 
+                    while on the go, our platform is optimized for various devices, ensuring a seamless learning experience across desktops, laptops, tablets, and smartphones.
+                </dd>
+            </dl>
+        </div>
+    </section>
+
+    <script src="Main.js"></script>
+    
+</body>
+</html>

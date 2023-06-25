@@ -1,0 +1,157 @@
+body {
+    background: rgb(29, 29, 29);
+}
+
+.semi-circle {
+    width: 100%;
+    height: 6.5rem;
+    background-color: #242323;
+    border-radius: 0 0 70rem 100rem; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+
+.navbar-menu {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-around;
+}
+
+.navbar-menu a {
+    font-family: 'Raleway' ,sans-serif;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.4s;
+    padding: 12px 15px;
+    border-radius: 2px;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+.navbar-menu a:hover {
+    background-color: #494949;
+    color: #000;
+}
+
+.navbar-menu a img {
+    margin-bottom: -5px;
+}
+
+.stats {
+    animation: fade-in 1000ms ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 1rem;
+    color:#d4d4d4;
+}
+
+.chart {
+    margin: 2rem;
+    margin-bottom: -20px;
+    margin-left: 21rem;
+    width: 35rem; 
+    height: 20rem;
+}
+
+h2 {
+    margin-left: 36rem;
+    color:#d4d4d4;
+}
+
+/* WIN RATE SCALE */
+.scale {
+    margin-left: 22rem;
+    top: 0;
+}
+
+.bar {
+    width: 35rem;
+    height: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.winBar {
+    background-color: rgb(12, 111, 12);
+}
+
+.drawBar {
+    background-color: rgb(82, 82, 82);
+}
+
+.loseBar {
+    background-color: rgb(176, 13, 13);
+}
+
+.progress {
+    height: 100%;
+    position: absolute;
+}
+
+/* BAR DESCRIPTION */
+.description {
+    display: flex;
+    font-family: 'Raleway' ,sans-serif;
+    font-size: 1rem;
+    margin: 0.5rem;
+}
+
+.description .win {
+    margin-right: 17rem;
+    color: rgb(12, 111, 12);
+}
+
+.description .draw {
+    margin-right: 4.5rem;
+    color: rgb(82, 82, 82);
+}
+
+.description .lose {
+    color: rgb(176, 13, 13);
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1030px) {
+    .bar {
+        width: 25rem;
+    }
+
+    h2{
+        margin-left: 11rem;
+        color:#d4d4d4;
+    }
+
+    .description .win {
+        margin-right: 10rem;
+    }
+
+    .description .draw {
+        margin-right: 2rem;
+    }
+
+    .scale {
+        margin-left: 2rem;
+    }
+
+    .chart {
+        margin-bottom: -150px;
+        margin-left: 2rem;
+        width: 25rem; 
+        height: 25rem;
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="LogInForm.css">
+  <title>Chess</title>
+</head>
+<body>
+  <section>
+    <div class="form-box">
+        <form action="" onsubmit="event.preventDefault(); validateForm();">
+          <h2>Login</h2>
+          <div class="inputBox">
+            <input type="email" placeholder="Username" id="username" required/>
+            <ion-icon name="mail-outline"></ion-icon>
+          </div>
+
+          <div class="inputBox">
+            <input type="password" placeholder="Password" id="password" required/>
+            <ion-icon name="lock-closed"></ion-icon>
+          </div>
+
+          <div class="description">
+            <input type="checkbox">Remember me
+            <a href="#">Forget password</a>
+          </div> 
+
+          <button type="submit" onclick="login()">Log in</button>
+          <div class="description">
+            Don't have an account?<a href="">Register</a>
+          </div>
+        </form>
+    </div>
+  </section>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script src="LogInValidation.js"></script>
+</body>
+</html>

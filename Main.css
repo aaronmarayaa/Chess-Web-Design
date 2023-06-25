@@ -1,0 +1,276 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300);
+
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+
+html {
+    font-size: 65%;
+}
+
+section {
+    padding: 7rem 5%;
+}
+
+.btn {
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin: 10rem;
+    color: #000000;
+    background: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 12px 20px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.btn:hover {
+    color: #ffffff;
+    background: #000000;
+    border: 1px solid #010101;
+}
+
+/* HEADER */
+ .navbar-menu a {
+    color: #ffffff;
+    transition: 0.4s;
+    display: block;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    margin-left: 6rem;
+    box-shadow: 0 2rem 1rem rgba(0, 0, 0, .1);
+    padding: 1.5rem 1.9rem;
+    text-transform: uppercase;
+    animation: fade-in 1000ms ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+ .navbar-menu a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+ .navbar-menu a img {
+    margin-bottom: -5px;
+}
+
+ .navbar-menu .log-out {
+    font-size: 1.2rem;
+    font-weight: 100px;
+    color: #ffffff;
+}
+
+ .navbar-menu .log-out:hover {
+    background-color: #c13d3d;
+    color: #000;
+}
+  
+.menu-icon {
+    display: none;
+    float: right;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0;
+}
+
+.menu-icon:hover {
+    background-color: #444;
+}
+
+/* CONFIRMATION PROMPT */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20rem 45rem;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 30rem;
+    animation: fade-in 0.4s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.modal-buttons {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.modal-buttons button {
+    margin-left: 10px;
+}
+
+/* HOME */
+.home {
+    min-height: 100vh;
+    padding-top: 2rem;
+    background-image: linear-gradient(rgba(237, 237, 237, 0.548),hsla(0, 0%, 22%, 0.6)), url(images/newbg-transformed.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home .stage {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    animation: fade-in 1000ms ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.home .stage .content {
+    flex: 42rem;
+}
+
+.home .stage .image img {
+    height: 383px;
+    width: 652px;
+    margin-right: -50px;
+    margin-top: 7rem;
+}
+
+.home .stage .content h3 {
+    font-size: 6.4rem;
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    margin: 2rem;
+    margin-top: 5rem;
+}
+
+.home .stage .content p {
+    color: rgb(249, 249, 249);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.95);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+    margin: 2rem;
+    margin-bottom: 5rem;
+}
+
+/* ABOUT */
+.about {
+    background: linear-gradient(rgb(45, 44, 46),hsla(0, 1%, 73%, 0.6));
+}
+
+.about .about-content {
+    animation: fade-in 1000ms ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.about h1 {
+    font-size: 5rem;
+    color: #ababab;
+}
+
+.about dl dt {
+    font-weight: bolder;
+    font-size: 1.7rem;
+    margin-top: 1rem;
+}
+
+.about dl dd {
+    margin-left: 5rem;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1030px) {
+
+    .home {
+        padding: 1rem;
+    }
+
+    .navbar-menu a {
+        font-size: 0.85rem;
+        margin-left: 2rem;
+    }
+
+    .home .stage .content h3 {
+        margin-top: 8rem;
+    }
+    
+    .home .stage .image img {
+        height: 35rem;
+        width: 45rem;
+    }
+
+    .about h1 {
+        margin-top: 2rem;
+    }
+    
+    .modal {
+        padding: 20rem 5rem;
+    }
+
+    /* BURGER MENU */
+    .menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+    
+    .menu-icon.active ~ .menu {
+        display: block;
+    }
+
+    .navbar-menu .sign-out {
+        margin-left: 17rem;
+        display: block;
+        font-size: 0.85rem;
+    }
+}
