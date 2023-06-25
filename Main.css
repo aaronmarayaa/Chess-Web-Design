@@ -142,6 +142,7 @@ section {
 /* HOME */
 .home {
     min-height: 100vh;
+    width: 100vw;
     padding-top: 2rem;
     background-image: linear-gradient(rgba(237, 237, 237, 0.548),hsla(0, 0%, 22%, 0.6)), url(images/newbg-transformed.jpeg);
     background-size: cover;
@@ -196,6 +197,7 @@ section {
 /* ABOUT */
 .about {
     background: linear-gradient(rgb(45, 44, 46),hsla(0, 1%, 73%, 0.6));
+    width: 100vw;
 }
 
 .about .about-content {
@@ -227,7 +229,11 @@ section {
     font-size: 1.5rem;
 }
 
-@media (max-width: 1030px) {
+@media only screen and (max-width: 480px) {
+
+    .btn{
+        margin: 1rem;
+    }
 
     .home {
         padding: 1rem;
@@ -243,8 +249,8 @@ section {
     }
     
     .home .stage .image img {
-        height: 35rem;
-        width: 45rem;
+        height: 25rem;
+        width: 35rem;
     }
 
     .about h1 {
@@ -253,6 +259,18 @@ section {
     
     .modal {
         padding: 20rem 5rem;
+    }
+
+    .modal-content {
+        width: 25rem;
+    }
+
+    .modal-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .modal-buttons button{
+        font-size: 1.5rem;
     }
 
     /* BURGER MENU */

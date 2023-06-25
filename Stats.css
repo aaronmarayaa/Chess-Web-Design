@@ -126,9 +126,9 @@ h2 {
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 767px) {
     .bar {
-        width: 25rem;
+        width: 20rem;
     }
 
     h2{
@@ -137,7 +137,7 @@ h2 {
     }
 
     .description .win {
-        margin-right: 10rem;
+        margin-right: 8rem;
     }
 
     .description .draw {
@@ -151,7 +151,7 @@ h2 {
     .chart {
         margin-bottom: -150px;
         margin-left: 2rem;
-        width: 25rem; 
-        height: 25rem;
+        width: 20rem; 
+        height: 20rem;
     }
 }
