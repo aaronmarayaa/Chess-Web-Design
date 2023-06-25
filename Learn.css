@@ -4,7 +4,6 @@
 
 body {
     background: rgb(29, 29, 29);
-    background-size: cover;
     padding: 2rem;
     padding-top: 0;
 }
@@ -119,6 +118,6 @@ body {
 
 @media only screen and (max-width: 480px) {
     .navbar-menu a {
-        font-size: 12px;
+        font-size: 10px;
     }
 }

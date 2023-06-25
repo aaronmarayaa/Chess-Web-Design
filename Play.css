@@ -4,7 +4,6 @@
 
 body {
     background: rgb(29, 29, 29);
-    background-size: cover;
     padding: 2rem;
     padding-top: 0;
 }
@@ -38,11 +37,11 @@ body {
 .navbar-menu a {
     font-family: 'Raleway' ,sans-serif;
     color: #fff;
-    transition: 0.4s;
     padding: 12px 15px;
     border-radius: 2px;
     align-items: center;
     text-transform: uppercase;
+    transition: 0.4s;
 }
 .navbar-menu a:hover {
     background-color: #494949;
@@ -85,7 +84,7 @@ body {
     padding: 4rem;
     display: inline-block;
     color: #ffffff;
-    font-family: 'Raleway' ,sans-serif;
+    font-family: sans-serif;
     font-size: 1rem;
     border-radius: 10px;
     border-bottom: 5px solid rgb(12, 12, 12);
@@ -104,6 +103,6 @@ body {
 
 @media only screen and (max-width: 480px) {
   .navbar-menu a {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
